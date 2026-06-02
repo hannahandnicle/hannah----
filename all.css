@@ -1,0 +1,328 @@
+
+/* 顏色 */
+
+
+:root{
+    --primary-100:#DFE9FA;
+    --primary-200:#C7D9F6;
+    --primary-300:#A1C1EF;
+    --primary-400:#74A0E6;
+    --primary-500:#5380DE;
+    --primary-600:#375ED0;
+    --primary-700:#3551C0;
+    --primary-800:#31449C;
+
+    --netural-0:#ffffff;
+    --netural-100:#F5F5F5;
+    --netural-200:#E6E6E6;
+    --netural-300:#D6D6D6;
+    --netural-400:#A5A5A5;
+    --netural-500:#767676;
+    --netural-600:#575757;
+    --netural-700:#434343;
+    --netural-800:#212121;
+    --netural-900:#1A1A1A;
+    
+
+
+    
+}
+
+/* 標籤 */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+
+}
+a{
+    text-decoration: none;
+    
+    display: inline-block;
+
+}
+
+body{
+    color: #212121;
+}
+
+
+/* 通用設定 */
+
+.margin-auto{
+ margin: auto;
+}
+
+.container {
+    max-width: 1440px;
+    padding-inline: 15px;
+    margin: auto;
+}
+
+
+.h1{
+    font-size: 64px;
+    line-height:1.5 ;
+    font-weight: 700;
+}
+
+.h2{
+    font-size: 42px;
+    line-height:1.5 ;
+    font-weight: 700;
+}
+
+.h3{
+    font-size: 32px;
+    line-height:1.5 ;
+    font-weight: 700;
+}
+
+
+.text-lg{
+    font-size: 24px;
+    line-height:1.5 ;
+    font-weight: 500;
+
+}
+
+.text-md{
+    font-size: 20px;
+    line-height:2 ;
+    font-weight: 600;
+
+}
+
+.text-sm{
+    font-size: 16px;
+    line-height:1.8 ;
+    font-weight: 500;
+
+}
+
+.bg-neutral-100{
+    background-color:var(--neutral-100);
+    
+}
+
+.bg-neutral-200{
+    background-color:var(--neutral-200);
+}
+
+.bg-neutral-300{
+    background-color:var(--neutral-300);
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+/* 網格 */
+
+.mb-4{
+    margin-bottom: 4px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.mb-12{
+    margin-bottom: 12px;
+}
+
+.mb-24{
+    margin-bottom: 23px;
+}
+
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mb-64{
+    margin-bottom: 64px;
+}
+
+
+.mb-72{
+    margin-bottom: 72px;
+}
+
+.mb-96{
+    margin-bottom: 96px;
+}
+
+.mb-142{
+    margin-bottom: 142px;
+}
+
+.mb-168{
+    margin-bottom: 168px;
+}
+
+
+.p-32{
+    padding: 32px;
+}
+
+.py-64{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.py-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pb-12{
+    padding-bottom: 12px;
+}
+
+.pb-24{
+    padding-bottom: 24px;
+}
+
+
+
+
+
+
+.pb-48{
+    padding-bottom: 48px;
+}
+
+.pe-8{
+    padding-right: 8px;
+}
+
+.pe-12{
+    padding-right: 12px;
+}
+
+.px-24{
+    padding-inline: 24px;
+}
+
+.container {
+    max-width: 1440px;
+    padding-inline: 15px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -15px;
+}
+
+[class^="col-"],
+.col {
+    
+    padding-inline: 15px;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+.offset-1 {
+  margin-left: 8.333333%;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -15px;
+}

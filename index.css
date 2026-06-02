@@ -1,0 +1,87 @@
+
+.menu a{
+    color: var(--netural-700);
+    padding: 8px 20px;
+
+    
+}
+
+
+
+.navbar{
+    background-color:var(--netural-0) ;
+    
+   
+}
+.login a{
+   text-decoration: none;
+   color: var(--netural-0);
+   background-color:var(--netural-800) ;
+   border-radius: 20px;
+   padding: 12px 40px;
+   
+
+}
+
+
+.header{
+    background-image: url(/image/hero-img.png);
+    max-width: 100%;
+    height: 800px; 
+    display: block;
+    /* 建議高度 450-500px之間 最高650px */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.trial a{
+    background-color:var(--primary-600) ;
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: var(--netural-0);
+}
+
+.device ul img{
+ padding-inline: 16px;
+ 
+ 
+}
+
+.device{
+    background-color: var(--netural-0);
+    padding-block: 8px;
+    border-radius: 20px;
+
+}
+
+.solution{
+    background-color: var(--netural-200);
+}
+
+.card{
+    width: 300px;
+    border-radius: 30px;
+    padding-block: 24px;
+    padding-inline: 100%;
+}
+
+
+.card-01{
+    background-color:#ECF2E8;
+   
+}
+
+
+.card-02{
+    background-color:#FFE8DA;
+}
+
+.card-03{
+    background-color:#DCE1FE;
+}
+
+
+.core-services{
+     background-color: var(--netural-200);
+}
