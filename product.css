@@ -1,0 +1,287 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.main-header{
+    width: 100%;
+    padding-top: 54px;
+}
+
+.container-pro{
+    margin: auto;
+    max-width: 1440px;
+    padding-inline: 120px;
+
+
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+
+}
+
+.nav-menu{
+    justify-content: space-between;
+}
+
+
+.nav-main-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding-inline: 32px;
+    border-radius: 32px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    
+
+    
+     
+     
+}
+
+.nav-menu a{
+    display: inline-block;
+    padding: 16px 32px;
+    text-decoration: none;
+    color: #212122;
+    display: inline-block; /* 必須加這個，transform 才會生效 */
+    border-bottom: 4px solid transparent; /* 先預留底線空間，避免文字被往下推 */
+    transition: all 300ms ease-in-out; /* 轉場放這裡，移入移出都滑順 */
+
+}
+
+.nav-menu a:hover{
+ 
+border-bottom: 4px solid var(--primary-600);
+transform: translateX(10px); /* 用 transform 代替 margin，效能更好且不影響排版 (建議 10px 就夠了，20px 偏多) */
+ 
+}
+
+
+.nav-login a{
+    display: inline-block;
+    padding: 16px 32px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: #212122;
+}
+
+
+.product-banner{
+
+  background-image: url(image/product-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 650px; 
+  background-position: bottom center;
+  display: block;
+
+}
+
+.nav-logo-link a{
+    margin-right: 240px;
+    display:inline-block;
+   
+}
+
+.nav-logo-link img{
+    padding-block: 10px;
+}
+
+.tag  p{
+    display: inline-block;
+    color: var(--primary-600);
+    background-color: var(--primary-100);
+    padding-block:8px ;
+    padding-inline: 16px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+
+}
+
+.nav-intro{
+    margin-top: 54px;
+}
+
+
+.nav-intro a{
+    padding-block: 16px;
+    padding-inline: 42px;
+    color: var(--netural-0);
+    background-color: var(--primary-600);
+    border-radius: 60px;
+    
+    
+}
+
+
+.mode{
+    background-color: var(--netural-0);
+}
+
+.ai-coach{
+    padding-top: 96px;
+    background-color: var(--netural-100);
+}
+
+.ai-mode-text{
+    text-align: center;
+}
+
+.ai-mode{
+
+    
+    justify-content: center;
+}
+
+.ai-mode-card-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ai-mode-card{
+    width: 590px;  
+}
+
+.ai-mode-card img{
+    
+    border-radius: 30px;
+    
+}
+
+.icon i{
+    width: 48px;
+    height: 48px;
+    
+    line-height: 48px;
+    border-radius: 400px;
+    margin-right: 8px;
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+
+
+.hour-card{
+    padding-block: 16px;
+    padding-inline: 24px;
+    background-color: var(--netural-0);
+    border: 1px solid var(--netural-200);
+    width: 180px;
+    border-radius: 24px;
+    margin-inline: 18px;
+    
+
+}
+
+.hour-card:hover{
+    
+    background-color: var(--primary-50);
+    border: 1px solid var(--primary-600);
+    
+    
+
+}
+
+
+.s-tag{
+    color:var(--primary-600);
+    padding-inline:16px ;
+    padding-block:8px ;
+    border: 2px solid var(--primary-600);
+    border-radius: 20px;
+    width: 180px;
+    text-align: center;
+}
+
+
+.coach-card-txt{
+    width: 500px;
+    padding-block: 48px;
+    padding-inline: 48px;
+    background-color: var(--netural-0);
+    border-radius: 0 30px 30px 0;
+    flex: 1; /* 讓卡片容器佔用剩下的一半空間 */
+  
+}
+
+.icon-2 i{
+    width: 48px;
+    height: 48px;
+    line-height: 30px;
+    border-radius: 400px;
+    margin-right: 8px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--netural-100);
+    padding-top: 10px;
+}
+
+
+.coach-img{
+
+flex: 1; /* 讓圖片容器佔用一半（或按比例分配）的空間 */
+display: flex; /* 讓圖片在容器內也能置中 */
+overflow: hidden; /* 裁切超出容器的圖片部分 */
+}
+
+
+.coach-img img{
+    width: 500px; /* 圖片寬度填滿容器 */
+  height: 700px; /* [核心] 圖片高度填滿容器 */
+  object-fit: cover; /* [核心] 這是魔法屬性：保持圖片比例，自動裁切以填滿 */
+  object-position: center; /* 圖片裁切時以中心為準 */
+   
+}
+
+.icon-direction i{
+    width: 48px;
+    height: 48px;
+    line-height: 30px;
+    border-radius: 400px;
+    margin-right: 8px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--netural-0);
+    padding-top: 10px;
+    margin-inline:16px ;
+
+}
+
+
+.dashboard{
+    background-color: var(--netural-0);
+    padding-block: 64px;
+    padding-inline: 36px;
+    border-radius: 30px;
+    margin-bottom: 168px;
+}
+
+
+.coach-lg-card{
+  display: flex;
+  align-items: stretch; /* [核心] 這是預設值，強迫子元素等高 (與最長的一個看齊) */
+  background-color: #f6f6f6; /* 原圖的背景色 */
+  border-radius: 20px; /* 原圖的圓角 */
+  overflow: hidden; /* 確保圓角 */
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1); /* 添加一點陰影，更像卡片 */
+  width: 100%; /* 視具體佈局而定 */
+  max-width: 1000px; /* 範例最大寬度 */
+  margin: 0 auto; /* 置中 */
+}

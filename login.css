@@ -1,0 +1,83 @@
+ 
+.login-section{
+
+    background-color: var(--primary-50);
+}
+
+
+.login-img{
+
+flex: 1; /* 讓圖片容器佔用一半（或按比例分配）的空間 */
+display: flex; /* 讓圖片在容器內也能置中 */
+overflow: hidden; /* 裁切超出容器的圖片部分 */
+}
+
+
+
+/* .login-input {
+    position: relative; /* 啟用相對定位，讓內部的 icon 可以絕對定位在它裡面 */
+    display: inline-block; /* 或者 width: 100%，看你原本的佈局需求 */
+    width: 100%; /* 讓它撐開，或者設定固定寬度如 width: 400px; */} */
+
+
+
+/* .login-input p{
+
+    padding-block: 16px;
+    padding-left: 56px;  /* 關鍵：加大左邊的 padding，留位置給 icon，避免文字去撞 icon */
+    padding-right: 24px;
+    border: 1px solid var(--netural-300);
+    border-radius: 30px;
+    color: var(--netural-300);
+    font-size: 20px;
+    margin: 0; /* 消除段落預設的外距 */} */
+
+
+
+.coach-card-txt a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--netural-700);
+    display: inline-block;
+
+
+}  
+.mail{
+    
+    padding-block: 16px;
+    padding-left: 56px;  /* 關鍵：加大左邊的 padding，留位置給 icon，避免文字去撞 icon */
+    padding-right: 24px;
+    border: 1px solid var(--netural-300);
+    border-radius: 30px;
+    color: var(--netural-300);
+    font-size: 20px;
+    margin: 0; /* 消除段落預設的外距 */}
+
+
+
+
+.coach-lg-card{
+  display: flex;
+  align-items: stretch; /* [核心] 這是預設值，強迫子元素等高 (與最長的一個看齊) */
+  background-color: #f6f6f6; /* 原圖的背景色 */
+  border-radius: 20px; /* 原圖的圓角 */
+  overflow: hidden; /* 確保圓角 */
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1); /* 添加一點陰影，更像卡片 */
+  width: 100%; /* 視具體佈局而定 */
+  max-width: 1000px; /* 範例最大寬度 */
+  margin: 0 auto; /* 置中 */
+}
+
+
+.chioce a{
+text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding-block: 16px;
+}
+
+.btn p{
+    background-color: var(--primary-600);
+    padding-block: 24px;
+    padding-inline: 40px;
+}

@@ -1,8 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,100,100..900;1,100,100..900&display=swap');
+
 /* 顏色 */
 
 
 :root{
+    --primary-50:#F1F6FE;
     --primary-100:#DFE9FA;
     --primary-200:#C7D9F6;
     --primary-300:#A1C1EF;
@@ -67,7 +70,7 @@ body{
 
 
 .h1{
-    font-size: 64px;
+    font-size: 52px;
     line-height:1.5 ;
     font-weight: 700;
 }
@@ -81,12 +84,27 @@ body{
 .h3{
     font-size: 32px;
     line-height:1.5 ;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
 .text-lg{
     font-size: 24px;
+    line-height:1.8 ;
+    font-weight: 500;
+
+}
+
+
+.text-lg-r{
+    font-size: 24px;
+    line-height:1.8 ;
+    font-weight: 400;
+
+}
+
+.text-md-b{
+    font-size: 20px;
     line-height:1.5 ;
     font-weight: 500;
 
@@ -94,15 +112,22 @@ body{
 
 .text-md{
     font-size: 20px;
-    line-height:2 ;
-    font-weight: 600;
+    line-height:1.5 ;
+    font-weight: 400;
+
+}
+
+.text-sm-b{
+    font-size: 16px;
+    line-height:1.5 ;
+    font-weight: 700;
 
 }
 
 .text-sm{
     font-size: 16px;
-    line-height:1.8 ;
-    font-weight: 500;
+    line-height:1.5 ;
+    font-weight: 400;
 
 }
 
@@ -138,6 +163,11 @@ body{
 
 .align-center{
     align-items: center;
+
+}
+
+.align-start{
+    align-items: start;
 }
 
 .flex-wrap{
@@ -147,8 +177,15 @@ body{
 .text-center{
     text-align: center;
 }
+
+.flex-column{
+flex-direction: column;
+}
 /* 網格 */
 
+.mt-120{
+    margin-top: 120px;
+}
 .mb-4{
     margin-bottom: 4px;
 }
@@ -159,6 +196,10 @@ body{
 
 .mb-12{
     margin-bottom: 12px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
 }
 
 .mb-24{
@@ -172,6 +213,10 @@ body{
 
 .mb-40{
     margin-bottom: 40px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
 }
 
 .mb-60{
@@ -191,6 +236,9 @@ body{
     margin-bottom: 96px;
 }
 
+
+
+
 .mb-142{
     margin-bottom: 142px;
 }
@@ -200,8 +248,17 @@ body{
 }
 
 
+.pt-64{
+    padding-top: 64px;
+}
+
 .p-32{
     padding: 32px;
+}
+
+.py-42{
+    padding-top: 42px;
+    padding-bottom: 42px;
 }
 
 .py-64{
@@ -209,14 +266,35 @@ body{
     padding-bottom: 64px;
 }
 
+.pb-64{
+    padding-bottom: 64px;
+}
+
+.py-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .py-32{
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
+.py-24{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
+
 .py-8{
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .pb-12{
@@ -229,7 +307,9 @@ body{
 
 
 
-
+.pb-120{
+    padding-bottom: 120px;
+}
 
 
 .pb-48{
@@ -247,6 +327,8 @@ body{
 .px-24{
     padding-inline: 24px;
 }
+
+
 
 .container {
     max-width: 1440px;
@@ -289,6 +371,7 @@ body{
 
 .col-6 {
     width: 50%;
+   
 }
 
 .col-7 {
@@ -325,4 +408,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-inline: -15px;
+}
+
+/* 陰影設定 */
+
+.b-shadow-1{
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
 }
