@@ -1,0 +1,123 @@
+
+
+
+.login2-section{
+    background-color: var(--primary-50);
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position:  center center ;
+    min-height: 100vh;
+    background-size: cover;
+    padding-block: 64px;
+    
+}
+
+.login-change a{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color:var(--netural-800);
+    padding: 12px 40px;
+    border-bottom: 4px solid var(--netural-400);
+
+}
+
+.login-items{
+    height: 679px;
+    flex-basis: 600px; 
+    background-color: var(--netural-0);
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* 垂直置中 */
+}
+
+.login-logo{
+flex-basis: 600px;
+height: 679px;
+background-image: url(image/login-nb.png);
+background-size: cover;
+text-align: center;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 30px 0 0 30px;
+
+}
+
+
+
+
+.login-logo p{
+    display: block;
+    padding-top: 8px;
+    
+}
+
+.login-text{
+    padding-inline: 40px;  /* 左右留白，輸入框就不會頂到邊緣 */
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.login-text p{
+    width: 445px;
+    text-align: right;
+    margin-bottom: 24px; /* 原本 mb-24 的效果移到這裡 */
+}
+
+label{
+    display: block;
+    padding-bottom: 8px;
+    width: 445px;        /* 對齊 input 寬度 */
+    padding-bottom: 8px;
+    text-align: left;    /* 明確靠左 */
+}
+
+.login-text input{
+    width: 445px;
+    height: 40px;
+    padding-block:8px ;
+    margin-bottom: 24px;
+}
+
+.login-btn{
+    
+     width: 445px;
+    padding-block:16px;
+    background-color: var(--primary-600);
+    color: var(--netural-0);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+
+
+}
+
+.login-change{
+    margin-bottom: 64px;
+    text-align: center;
+    position: 28px;
+}
+
+
+.login-change a{
+    width: 215px;
+    font-size: 20px;
+    
+}
+
+.login-change a:hover{
+    
+    border-bottom: 4px solid var(--primary-700);
+    color: var(--primary-700);
+
+}

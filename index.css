@@ -74,8 +74,9 @@
 .device{
     background-color: var(--netural-0);
     padding-block: 8px;
+    padding-inline: 12px;
     border-radius: 20px;
-    width: 600px;
+    width: 400px;
 
 }
 
@@ -202,8 +203,9 @@ padding-top: 32px;
 }
 
 .device-combine-img ul{
-    gap: 30px;
+    gap: 24px;
     padding-inline: 20px;
+
 }
 
 .fit-bar{
