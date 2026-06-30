@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 650px; 
+  min-height: 650px; 
   background-position: bottom center;
   display: block;
 
@@ -12,7 +12,7 @@
 
 
 .team-value{
-  padding-block:168px;
+  padding-block:120px;
   background-color: var(--netural-0);
 }
 
@@ -32,7 +32,7 @@
 }
 
 .team-img img{
-border-radius: 30px;
+border-radius: 15px;
 object-fit: cover;
 width: 100%;
 height: 100%;
@@ -47,55 +47,42 @@ object-position: right center
 .value-intro{
 
   background-color: var(--netural-0);
-  padding-bottom: 168px;
+  padding-bottom: 120px;
 }
 
-.value-item{
-   gap: 40px; 
+.value-item-scroll{
+   gap: 12px; 
 }
 
-.value-intro-card{
-  width: 333.5px;
-    
 
-}
 
 .value-intro-img{
-  
-  margin-inline:20px ;
-  
-  height: 350px;     /* 設定你希望卡片呈現的高度 */
+  height: 350px;     
   overflow: hidden;  /* 確保超出外框的圖片切掉 */
-
-
 }
 
 .value-intro-img img{
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover; /* 關鍵 1：讓圖片不變形地鋪滿整個外框 */
-  
-  
 }
 
 .value-intro-txt{
-
   padding-block: 16px;
   padding-inline: 36px;
   background-color: var(--primary-50);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 
 
 .info-sec{
-  
   background-image: url(image/info-sec-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 720px;
+  min-height: 720px;
   /* background-position: center center; */
   display: block;
   border-radius: 30px;
@@ -104,22 +91,159 @@ object-position: right center
 }
 
 .info-sec-intro{
-  
   background-color: var(--netural-0);
   padding-bottom: 168px;
-  
 }
 
 .info-sec-txt{
-  width: 532px;
-  
-
+  max-width: 532px;
 }
 
 .info-sec-card{
-  
   background-color: var(--netural-0);
   border-radius: 30px;
   padding-inline: 36px;
   padding-block: 16px;
 }
+
+
+
+
+  .img-about-banner{
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: none;
+    flex: 1;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+ }
+
+
+
+
+@media (max-width:992px){
+
+
+.about-banner{
+
+  background: linear-gradient(180deg, #DCEBFB 0%, #F3F8FD 60%, #FFFFFF 100%);
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center ;
+
+}
+
+.img-about-banner{
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: block;
+    flex: 1;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+
+
+.team-value-card{
+  flex-direction: column;
+}
+
+
+#scroll-btn{
+  position:relative;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  /* align-items:center; */
+}
+.btn_container{
+  display:flex;
+  gap:10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all .3s ease ;
+  
+}
+.btn-dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.btn-dot:hover{
+  background-color: #666;
+  transform: scale(1.2);
+}
+
+.value-intro-content{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.value-item-scroll{
+  width:100%;
+  /* max-width: 400px; */
+  height:auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  
+}
+.value-intro-card{
+  flex: 0 0 100%;  
+  max-width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  color:var(--netural-700);
+  scroll-snap-align: start;
+  padding: 20px;
+}
+
+.value-intro-content{
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+.value-item-scroll::-webkit-scrollbar{
+  display: none;
+}
+
+
+.value-intro-img{
+  height: 300px;
+  overflow: hidden;  /* 確保超出外框的圖片切掉 */
+}
+
+
+.info-sec-card{
+  background-color: var(--netural-0);
+  width: 100%;
+  border-radius: 20px;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.info-sec{
+
+  
+  padding-inline:16px ;
+}
+
+
+}
+
+

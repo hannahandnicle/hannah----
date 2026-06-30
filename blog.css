@@ -1,35 +1,74 @@
-
-
 body{
     background-color: #F3F3F3; 
 } 
-/* .container-2 {
-    max-width: 1440px;
-    margin: 0 auto ;
-    display: flex;
-    justify-content: space-evenly;
+
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: 300px 1fr; 
+    grid-template-areas: "aside  article-section";
+    gap: 32px; /* 側邊欄跟文章區的左右間距 */
+    max-width: 1200px; 
+    margin: 0 auto;    /* 整個版面置中 */
+    padding: 2rem 1rem;
+    background-color: #F3F3F3;
     
-} */
+}
+
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* 控制 Category 與 top5 的上下間距 */
+}
+
+
+
+.article-section {
+    grid-area: article-section;
+    /* 這裡不需要再給它設 display: grid 囉！
+       它就像你的手稿畫的一樣，是個垂直包住「文章網格」與「分頁條」的藍色大框框 */
+    width: 100%;
+}
+
+/* 4. 對應手稿中的 arti-item (卡片網格) */
+.arti-item {
+    display: grid;
+    /* 配合手稿的兩欄長相，每欄最少 340px，放不下就自動彈性變一欄 */
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px; 
+    margin-bottom: 40px; /* 留點空間給下面的分頁條 (1/2/3/4/5) */
+}
+
+/* 5. 單張卡片（解放寬度） */
+.article-card {
+    /* 關鍵修正：把原本的 width: 360px 改為 100% */
+    width: 100%; 
+    background-color: var(--netural-0);
+    box-shadow: 4px 4px 20px #b0b0b0;
+    margin-bottom: 0; /* 清除舊的 margin，完全交給 .arti-item 的 gap 控制 */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+
 
 .container-3 {
-    
     margin: 0 auto ;
     display: flex;
     justify-content:  space-evenly;
     background-color: var(--netural-0);
-    
 }
 
 
-.aside{
-    flex-basis: 364px;
-    
-}
 
 .search {
     position: relative; /* 啟用相對定位，讓內部的 icon 可以絕對定位在它裡面 */
     display: inline-block; /* 或者 width: 100%，看你原本的佈局需求 */
-    width: 100%; /* 讓它撐開，或者設定固定寬度如 width: 400px; */}
+    width: 100%; /* 讓它撐開，或者設定固定寬度如 width: 400px; */
+}
 
 
 
@@ -42,7 +81,6 @@ body{
     color: var(--netural-300);
     font-size: 20px;
     margin: 0; /* 消除段落預設的外距 */
-    
 }
 
 .search i {
@@ -54,6 +92,14 @@ body{
     font-size: 20px;    /* 調整 icon 大小 */
 }
 
+.category, .top5 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0; /* 清除舊的 margin */
+    background-color: var(--netural-0);
+    border-radius: 12px; /* 加上好看的圓角 */
+    padding-inline:16px ;
+}
 
 
 .top5 ol li a{
@@ -82,17 +128,15 @@ body{
 .top-list li a::before{
     content: counter(item);
     counter-increment: item;
-    
+    margin-right: 8px;
     font-size: 32px;
     font-weight: 700;
 }
 
 
-.article-section{
-flex-basis: 768px;
 
 
-}
+
 .category ul li a{
     font-size: 20px;
     font-weight: 700;
@@ -101,33 +145,11 @@ flex-basis: 768px;
     text-decoration: none;
     padding-block: 16px;
     padding-right: 100px;
-
-    
-    
-
-}
-
-.category,.top5{
-   
-    padding: 20px 28px;
-    background-color: var(--netural-0);
-    margin-bottom: 40px;
-}
-
-.arti-tiem{
-    gap: 40px;
 }
 
 
-.article-card{
 
-    width: 360px;
-    /* margin-inline: 15px; */
-    background-color: var(--netural-0);
-    box-shadow: 4px 4px 20px #b0b0b0;
-    margin-bottom: 40px;
-    transition: background-color 0.3s ease;
-}
+
 
 .article-card img{
   width: 100%;
@@ -194,49 +216,25 @@ color: var(--netural-0);
     color: var(--netural-0);
 }
 
-.footer-section {
-    margin-block: 64px;
+
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "aside"
+            "article-section";
+        gap: 24px;
+        padding: 1rem;
+    }
+
     
-}
+    .top5 {
+        display: none;
+    }
 
-.footer-product h5,.footer-resource h5,.footer-about h5{
- font-size: 20px;
- font-weight: 700px;
- margin-bottom: 24px;
-}
-
-.footer-product ,.footer-resource ,.footer-about {
- font-size: 20px;
- font-weight: 700px;
- margin-inline: 60px;
-}
-
-
-.footer-section ul li a{
-    font-size: 16px;
-    text-decoration: none;
-    color: var(--netural-400);
-      margin-block:8px 
-   
-}
-
-
-.footer-logo p{
-    color: var(--netural-600);
-    margin-block: 16px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.footer-logo ul li a {
-color: var(--netural-600);
- display: inline-block;
- 
- width: 30px;
- height: 30px;
- border: 1px solid var(--netural-600);
- border-radius: 300px;
- margin-right: 8px;
- text-align: center;
- line-height: 30px;
-}
+    
+    /* .category ul li a {
+        padding-right: 0; 
+    /* } */
+} 

@@ -14,28 +14,34 @@
 
 </head>
 <body>
-    <section class=" main-header product-banner">
-    
-            <div class="nav-header">
+
+        <div class="nav-header">
                 <nav class="nav-main-wrapper">
                     <div class="nav-logo-link">
                         <a href="index.html">
                         <img src="image/respiro-logo.png" alt="respiro-logo" width="150px;" ></a>
                     </div>
                     <div class="nav-menu">
-                        <a href="product.html">產品</a>
-                        <a href="blog.html">部落格</a>
-                        <a href="about.html">關於我們</a>
+                        <a href="product.html"class="active">產品</a>
+                        <a href="blog.html"class="active">部落格</a>
+                        <a href="about.html"class="active">關於我們</a>
+                        <a href="login-2.html"class="nav-mobile-only active">登入/註冊</a>
+
                     </div>
                     
                 </nav>
                     <div class="nav-login">
                         <a href="login-2.html">登入/註冊</a>
                     </div>
-                    <div class="hamburger">
-                        <i class="fa-solid fa-bars" style="color: black; font-size: 24px;"></i>
-                    </div>
-            </div>
+                    
+                    <button class="navbar-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+        </div>
+    <section class=" main-header product-banner">
+
         <div class="container-pro">
             <div class="row row-sm row-md">
                 <div class="hero-content">
@@ -93,7 +99,7 @@
                         <h3 class="h3 mb-8 h3-lg h3-md h3-sm">量身打造的24小時AI身心教練</h3>
                         <p class=" text-lg-r h5-lg h5-md h5-sm mb-64">全天候陪伴你<br>提供恰到好處的建議與練習</p>
                     </div>
-                                <div class="hour-list d-flex justify-center mb-40">
+                                <div class="hour-list-scroll d-flex  mb-40">
                                     <div class="hour-card d-flex">
                                         <div class="icon">
                                         <i class="bi bi-brightness-high-fill" style="font-size: 36px ; color: #EFC930; background-color: #F8E9AA;" ></i>
@@ -157,14 +163,14 @@
 
                                     <div class="coach-card  ">
                                         <div class="coach-img">
-                                            <img src="image/AI教練-晨間練習.png" alt="" width="500px;" height="600px;">
+                                            <img src="image/AIcoach-0700.png" alt="" width="500px;" height="600px;">
                                         </div>
                                     </div>
 
                                         <div class="coach-card-txt  ">
-                                            <p class="s-tag text-sm-b mb-32 h5-lg h5-md h5-sm">7:30 晨間呼吸</p>
-                                            <h3 class="h3 mb-32 h3-lg h3-md h3-sm">開啟美好的一天</h3>
-                                            <p class="text-sm mb-40">AI根據你的睡眠與心率變化，<br>
+                                            <p class="s-tag text-sm-b mb-32 h6-lg h6-md h6-sm">7:30 晨間呼吸</p>
+                                            <h3 class="h4 mb-32 h4-lg h4-md h4-sm">開啟美好的一天</h3>
+                                            <p class="text-sm mb-40"style="color: var(--netural-500);">AI根據你的睡眠與心率變化，<br>
                                             推薦5分鐘呼吸練習，幫助你提升專注力與穩定度。</p>
 
                                             <div class="benefit-list d-flex align-center mb-40">
@@ -217,34 +223,35 @@
     <section class="dashboard-intro">
 
         <div class="container-pro">
+            <div class="row row-lg row-sm row-md row-sm justify-center">
 
-            <div class="dashboard d-flex justify-between">
-                    <div class="dashboard-txt mb-24">
-                        <h3 class="h3 mb-40">深度分析看見背後的關聯性</h3>
-                        <div class="board-md-txt mb-24 ">
-                            <h4 class="text-lg">多維度數據整合</h4>
-                            <p class="text-sm" style="color: var(--netural-500);">整合心率、壓力、睡眠、活動等數據</p>
+                <div class="dashboard d-flex justify-between">
+                        <div class="dashboard-txt mb-24">
+                            <h3 class="h3 mb-40">深度分析看見背後的關聯性</h3>
+                            <div class="board-md-txt mb-24 ">
+                                <h4 class="text-lg">多維度數據整合</h4>
+                                <p class="text-sm" style="color: var(--netural-500);">整合心率、壓力、睡眠、活動等數據</p>
+                            </div>
+
+                            <div class="board-md-txt mb-24">
+                                <h4 class="text-lg">AI 智能洞察</h4>
+                                <p class="text-sm" style="color: var(--netural-500);">數據化關聯與趨勢</p>
+                            </div>
+
+                            <div class="board-md-txt mb-24">
+                                <h4 class="text-lg">個人化建議</h4>
+                                <p class="text-sm" style="color: var(--netural-500);">根據你的生活型態提供優化建議</p>
+                            </div>
+
                         </div>
 
-                        <div class="board-md-txt mb-24">
-                            <h4 class="text-lg">AI 智能洞察</h4>
-                            <p class="text-sm" style="color: var(--netural-500);">數據化關聯與趨勢</p>
+                        <div class="dashboard-img">
+                        <img src="image/dashboard.png" alt="dashboard" style="width: 720px;">
+
                         </div>
-
-                        <div class="board-md-txt mb-24">
-                            <h4 class="text-lg">個人化建議</h4>
-                            <p class="text-sm" style="color: var(--netural-500);">根據你的生活型態提供優化建議</p>
-                        </div>
-
-                    </div>
-
-                    <div class="dashboard-img">
-                    <img src="image/dashboard.png" alt="dashboard" style="width: 720px;">
-
-                    </div>
-            
+                
+                </div>
             </div>
-
 
         </div>
 
@@ -253,8 +260,8 @@
     </section>
 
 
-<div class="container-3">
-    <footer class="footer-section d-flex" >
+<div class="container-pro">
+    <footer class="footer-section d-flex justify-center py-64" >
 
         <nav class="footer-logo">
         <img src="image/respiro-logo.png" alt="logo" width="150px;">
@@ -269,41 +276,51 @@
          </nav>
 
         <nav class="footer-product">
-                <h5>產品</h5>
+                <h5 class= "h6 h6-lg h6-md h6-sm">產品</h5>
             <ul>
-                <li><a href="">功能介紹</a></li>
-                <li><a href="">使用場景</a></li>
-                <li><a href="">價格方案</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">功能介紹</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">使用場景</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">價格方案</a></li>
                 
             </ul>
         </nav>
 
         
          <nav class="footer-product">
-                <h5>資源</h5>
+                <h5 class="h6 h6-lg h6-md h6-sm">資源</h5>
             <ul>
-                <li><a href="">部落格</a></li>
-                <li><a href="">使用指南</a></li>
-                <li><a href="">常見問題</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">部落格</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">使用指南</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">常見問題</a></li>
             </ul>
         </nav>
         
         <nav class="footer-about">
-            <h5>關於我們</h5>
+            <h5 class="h6 h6-lg h6-md h6-sm">關於我們</h5>
                 <ul>
-                    <li><a href="">關於Respiro</a></li>
-                    <li><a href="">隱私政策</a></li>
-                    <li><a href="">聯絡我們</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">關於Respiro</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">隱私政策</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">聯絡我們</a></li>
                     
                 </ul>
         </nav>
 
 
 
-</div>
+
     </footer>
+</div>
 
 
+<script>
+    let navbarToggle=document.querySelector('.navbar-toggle');
+    let navbarMenu=document.querySelector('.nav-menu');
 
+    navbarToggle.addEventListener("click",function(){
+        navbarToggle.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+    });
+   
+</script>
 </body>
 </html>

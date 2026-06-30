@@ -1,6 +1,4 @@
- 
 .login-section{
-
     background-color: var(--primary-50);
 }
 
@@ -13,24 +11,9 @@ overflow: hidden; /* 裁切超出容器的圖片部分 */
 }
 
 
-
-/* .login-input {
-    position: relative; /* 啟用相對定位，讓內部的 icon 可以絕對定位在它裡面 */
-    display: inline-block; /* 或者 width: 100%，看你原本的佈局需求 */
-    width: 100%; /* 讓它撐開，或者設定固定寬度如 width: 400px; */} */
-
-
-
-/* .login-input p{
-
-    padding-block: 16px;
-    padding-left: 56px;  /* 關鍵：加大左邊的 padding，留位置給 icon，避免文字去撞 icon */
-    padding-right: 24px;
-    border: 1px solid var(--netural-300);
-    border-radius: 30px;
-    color: var(--netural-300);
-    font-size: 20px;
-    margin: 0; /* 消除段落預設的外距 */} */
+.login-btn{
+    text-align: center !important;
+}
 
 
 

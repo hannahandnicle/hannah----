@@ -15,49 +15,56 @@
 
 </head>
 <body>
-    <section class=" main-header pb-64 ">
-    
-    <div class="container-pro">
-        
-            <div class="nav-header">
+      <div class="nav-header">
                 <nav class="nav-main-wrapper">
                     <div class="nav-logo-link">
                         <a href="index.html">
                         <img src="image/respiro-logo.png" alt="respiro-logo" width="150px;" ></a>
                     </div>
                     <div class="nav-menu">
-                        <a href="product.html">產品</a>
-                        <a href="blog.html">部落格</a>
-                        <a href="about.html">關於我們</a>
+                        <a href="product.html"class="active">產品</a>
+                        <a href="blog.html"class="active">部落格</a>
+                        <a href="about.html"class="active">關於我們</a>
+                        <a href="login-2.html"class="nav-mobile-only active">登入/註冊</a>
+
                     </div>
                     
                 </nav>
                     <div class="nav-login">
                         <a href="login-2.html">登入/註冊</a>
                     </div>
-            </div>
-  
-    </div>
-</section>
+                    
+                    <button class="navbar-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+        </div>
     
-    <div class="container-pro d-flex justify-between">
-     <!-- <div class="row"> -->
+    
+    <!-- <section class=" main-header ">
+    
+</section> -->
+    
+
+<div class="grid-layout">
+    
     <section class="aside ">
-              <div class="search mb-32 ">
+            <div class="search mb-32 ">
                 <p>search...</p>
                 <i class="fa-solid fa-magnifying-glass"></i>
-              </div>    
+            </div>    
 
-               <nav class="category py-40" >
+            <nav class="category py-40" >
                 <h3 class="h3">分類</h3>
-                  <ul class="category-list py-42">
+                <ul class="category-list py-42">
                     <li><a href="#">辦公抗壓防護</a></li>
                     <li><a href="#">日常身心調節</a></li>
                     <li><a href="#">科學身體數據</a></li>
                     <li><a href="#">精力與恢復力</a></li>
                     <li><a href="#">健康習慣連勝</a></li>
-                  </ul>
-               </nav> 
+                </ul>
+            </nav> 
                
                 <nav class="top5 py-40" >
                 <h3 class="h3">熱門排行文章</h3>
@@ -76,16 +83,16 @@
                </nav> 
                
 
-    <!-- </div>  -->
+    
             
         
     </section>
         
     
-    <section class="article-section justify-between">
+    <section class="article-section ">
         
 
-        <div class=" arti-tiem d-flex flex-wrap  blog-bgc  ">
+        <div class=" arti-item">
         
             <div class="article-card">
                 <img src="image/blog-1.png" alt="">
@@ -147,9 +154,9 @@
     </section>
 
    
-    
-   
 </div>
+   
+<!-- </div> -->
 
 <div class="container">
  <section class="page-bar ">
@@ -168,8 +175,8 @@
 
 </div>
 
-<div class="container-3">
-    <footer class="footer-section d-flex" >
+<div class="container-pro">
+    <footer class="footer-section d-flex justify-center py-64" >
 
         <nav class="footer-logo">
         <img src="image/respiro-logo.png" alt="logo" width="150px;">
@@ -184,38 +191,47 @@
          </nav>
 
         <nav class="footer-product">
-                <h5>產品</h5>
+                <h5 class= "h6 h6-lg h6-md h6-sm">產品</h5>
             <ul>
-                <li><a href="">功能介紹</a></li>
-                <li><a href="">使用場景</a></li>
-                <li><a href="">價格方案</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">功能介紹</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">使用場景</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">價格方案</a></li>
                 
             </ul>
         </nav>
 
         
          <nav class="footer-product">
-                <h5>資源</h5>
+                <h5 class="h6 h6-lg h6-md h6-sm">資源</h5>
             <ul>
-                <li><a href="">部落格</a></li>
-                <li><a href="">使用指南</a></li>
-                <li><a href="">常見問題</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">部落格</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">使用指南</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">常見問題</a></li>
             </ul>
         </nav>
         
         <nav class="footer-about">
-            <h5>關於我們</h5>
+            <h5 class="h6 h6-lg h6-md h6-sm">關於我們</h5>
                 <ul>
-                    <li><a href="">關於Respiro</a></li>
-                    <li><a href="">隱私政策</a></li>
-                    <li><a href="">聯絡我們</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">關於Respiro</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">隱私政策</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">聯絡我們</a></li>
                     
                 </ul>
         </nav>
 
-
-
-</div>
     </footer>
+</div>
+
+<script>
+    let navbarToggle=document.querySelector('.navbar-toggle');
+    let navbarMenu=document.querySelector('.nav-menu');
+
+    navbarToggle.addEventListener("click",function(){
+        navbarToggle.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+    });
+   
+</script>
 </body>
 </html>

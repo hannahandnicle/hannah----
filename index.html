@@ -17,31 +17,37 @@
 
 
 <body>
-
- <section class=" main-header index-banner">
-        <div class="nav-header mb-40">
+       <div class="nav-header">
                 <nav class="nav-main-wrapper">
                     <div class="nav-logo-link">
                         <a href="index.html">
                         <img src="image/respiro-logo.png" alt="respiro-logo" width="150px;" ></a>
-                     </div>
-                <div class="nav-menu">
-                    <a href="product.html">產品</a>
-                    <a href="blog.html">部落格</a>
-                    <a href="about.html">關於我們</a>
-                </div>
-                            
+                    </div>
+                    <div class="nav-menu">
+                        <a href="product.html"class="active">產品</a>
+                        <a href="blog.html"class="active">部落格</a>
+                        <a href="about.html"class="active">關於我們</a>
+                        <a href="login-2.html"class="nav-mobile-only active">登入/註冊</a>
+
+                    </div>
+                    
                 </nav>
                     <div class="nav-login">
                         <a href="login-2.html">登入/註冊</a>
                     </div>
-                    <div class="hamburger">
-                        <i class="fa-solid fa-bars" style="color: black; font-size: 24px;"></i>
-                    </div>
+                    
+                    <button class="navbar-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
         </div>
-    
+
+
+ <section class=" main-header index-banner">
+        
 <div class="container-pro">
-        <div class="row row-sm row-md">
+        <!-- <div class="row row-sm row-md"> -->
             <div class="hero-content d-flex  ">
                 <div class="intro-items ">
                         <h1 class="h1 mb-32 h6-md py-md-32 ">AI智能管理平台 <br>陪忙碌的你<br> 好好照顧自已</h1> 
@@ -68,7 +74,7 @@
                             <img src="image/hero-section-2.png" alt="">
                         </div>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
 </section>
             
@@ -87,7 +93,7 @@
                             <div class=" pain-text  col-5 col-lg-3">
                             <h3 class="h3 mb-32">在失速的日常裡<br>用科技一鍵同步
                             心率與呼吸</h3>
-                            <p class="text-sm">即時偵測，心率一上升，主動提醒。<br>
+                            <p class="text-sm mb-24">即時偵測，心率一上升，主動提醒。<br>
                                                 Respiro 立刻提供呼吸練習建議，
                                                 不用你自己記得查。</p>
                             </div>
@@ -102,30 +108,35 @@
         <section class="solution">
             <div class="container-pro ">
                     <div class="row row-md ">
-                            <div class=" py-64 ">
+                            <div class="  solution-item-scroll py-64 ">
                                 <div class="solution-text  text-center ">
                                     <div class="intro">解 決 痛 點</div>
                                     <h2 class="h2 mb-64  mb-24 h2-lg h2-md h2-sm"  >你是不是也常在健康與忙碌之間<br>
                                 陷入這些死循環？</h2>
                                 </div>
 
-                                <div class=" card-list  ">
-                                    <div class="  card card-01 col-4 col-md-3">
+                                <div class=" card-list">
+                                    <div class="  card card-01 col-4 col-md-3" id="section_a">
                                         <div class="num">01</div>
                                         <h3 class="h4 mb-24">App 太繁瑣沒<br>時間研究</h3>
                                         <p class="text-sm">步驟卡關、手動輸入資料好麻煩，操作超過 3 步就想放棄，打卡總是半途而廢。</p>
                                     </div>
-                                    <div class="card card-02 col-4 col-md-3">
+                                    <div class="card card-02 col-4 col-md-3" id="section_b">
                                         <div class="num">02</div>
                                         <h3 class="h4 mb-24">看著滿屏數據<br>卻毫無頭緒</h3>
                                         <p class="text-sm">看得到睡眠和心率，卻不知道怎麼改善。壓力爆棚時找不到出口，水分也經常忘記補充。</p>
                                     </div>
-                                    <div class=" card card-03 col-4 col-md-3">
+                                    <div class=" card card-03 col-4 col-md-3" id="section_c">
                                         <div class="num">03</div>
                                         <h3 class="h4 mb-24">缺乏成就感<br>總是孤單堅</h3>
                                         <p class="text-sm">在家庭與工作雙重夾擊下，你想改變，但缺少那種有人陪伴、被引導的放鬆感。</p>
                                     </div>
                                 </div>
+                                 <div class="btn_container">
+                                    <span><a href="#section_a" class="btn-dot"></a></span>
+                                    <span><a href="#section_b" class="btn-dot"></a></span>
+                                    <span><a href="#section_c" class="btn-dot"></a></span>
+                            </div>
                             </div>
                     </div>
                   
@@ -187,8 +198,8 @@
                     <div class="device-combine-item d-flex justify-center py-120">
                         <div class=" device-comb text-center">
                                 <div class="intro ">支援主流穿戴裝置</div>
-                                <h2 class="h2  mb-32">與你常用的裝置完美整合</h2>
-                                <p>同步數據，自動記錄，全面掌握你的健康狀態</p>
+                                <h2 class="h2  mb-32 h2-lg h2-md h2-sm  ">與你常用的裝置完美整合</h2>
+                                <p class="text-sm text-large-sm">同步數據，自動記錄，全面掌握你的健康狀態</p>
                             </div>   
 
                         <div class="device-combine-img align-center ">
@@ -217,17 +228,18 @@
                     </div>  
                 
                     <div class="fit-bar text-center">
-                        <a href="">高壓生活族</a>
-                        <a href="">忙碌上班族</a>
-                        <a href="">健康意識族</a>
+                        <a href="" class="tab-btn active" data-tab="high-stress">高壓生活族</a>
+                        <a href=""class="tab-btn" data-tab="busy-worker">忙碌上班族</a>
+                        <a href=""class="tab-btn" data-tab="health-conscious">健康意識族</a>
                     </div>
-         
 
-<div class="coach-section d-flex justify-center  mb-168 align-center ">
+ 
 
-                   
-        <div class="coach-lg-card">
+<div class="coach-section d-flex justify-center  mb-168 align-center ">    
+    <div class="container-pro ">
+        <div class="row row-md ">
 
+                <div id="high-stress" class="coach-lg-card  tab-content active">
                     <div class="coach-card ">
                         <div class="coach-img">
                             <img src="image/man.png" alt="" width="500px;" height="600px;">
@@ -235,8 +247,8 @@
                     </div>
 
                         <div class="coach-card-txt">
-                            <p class="text-sm-b mb-24" style="color: var(--primary-600);">高壓生活族群</p>
-                            <h3 class="h3 mb-32">在忙碌中找到平衡讓健康成為你的後盾</h3>
+                            <p class="text-sm-b mb-24 text-large-sm" style="color: var(--primary-600);">高壓生活族群</p>
+                            <h3 class="h4 h4-lg h4-md h4-sm mb-32">成為你平衡健康的後盾</h3>
                         
                             <div class="benefit-list d-flex  mb-40">
                                 <div class="icon-2 ">
@@ -244,11 +256,11 @@
                                     </i>
                                 </div>
                                 <div class="benefit-card">
-                                    <h4 class="text-lg mb-8">數據拒絕發呆</h4>
-                                    <p class="text-sm-b"  style=" color: var(--netural-600)";>週期性健康報告，全面了解身體的每一個
+                                    <h4 class="text-md-b  mb-8">數據拒絕發呆</h4>
+                                    <p class="text-sm "  style=" color: var(--netural-600)";>週期性健康報告，全面了解身體的每一個
                                     細微進步。</p>
                                 </div>
-                                
+
                             </div>
 
                             <div class="benefit-list d-flex  mb-40">
@@ -257,29 +269,101 @@
                                     </i>
                                 </div>
                                 <div class="benefit-card">
-                                    <h4 class="text-lg mb-8">爆棚壓力釋放</h4>
-                                    <p class="text-sm-b"  style=" color: var(--netural-600)";>AI 智能偵測心率變化，高壓時主動引導
-進行隨身的減壓冥想練習。</p>
+                                    <h4 class="text-md-b mb-8">爆棚壓力釋放</h4>
+                                    <p class="text-sm"  style=" color: var(--netural-600)";> AI 智能偵測心率變化，高壓時主動引導進行隨身的減壓冥想練習。</p>
                                 </div>
-                                
+                            </div>
+                        </div>
+                </div>
+
+       <div  id="busy-worker" class="coach-lg-card tab-content ">
+                    <div class="coach-card ">
+                        <div class="coach-img">
+                            <img src="image/woman.png" alt="" width="500px;" height="600px;">
+                        </div>
+                    </div>
+
+                        <div class="coach-card-txt">
+                            <p class="text-sm-b mb-24 text-large-sm" style="color: var(--primary-600);">忙碌上班族</p>
+                            <h3 class="h4 h4-lg h4-md h4-sm mb-32">成為你平衡健康的後盾</h3>
+                        
+                            <div class="benefit-list d-flex  mb-40">
+                                <div class="icon-2 ">
+                                    <i class="fa-solid fa-arrow-trend-up" style="font-size: 30px ;color: var(--primary-600);">
+                                    </i>
+                                </div>
+                                <div class="benefit-card">
+                                    <h4 class="text-md-b  mb-8">拯救碎片時間</h4>
+                                    <p class="text-sm "  style=" color: var(--netural-600)";>無感自動追蹤，不打擾你的高頻工作節奏。</p>
+                                </div>
+
                             </div>
 
-                           
+                            <div class="benefit-list d-flex  mb-40">
+                                <div class="icon-2 ">
+                                    <i class="bi bi-heart-pulse-fill" style="font-size: 30px ;color: var(--primary-600);">
+                                    </i>
+                                </div>
+                                <div class="benefit-card">
+                                    <h4 class="text-md-b mb-8">Slack 工作場景整合</h4>
+                                    <p class="text-sm"  style=" color: var(--netural-600)";> 直接在工作軟體中接收喝水與休息提醒，讓健康無縫融入辦公流程。</p>
+                                </div>
+                            </div>
                         </div>
+                </div>
+
+
+
+                       <div  id="health-conscious" class="coach-lg-card tab-content  ">
+                    <div class="coach-card ">
+                        <div class="coach-img">
+                            <img src="image/sport.png" alt="" width="500px;" height="600px;">
+                        </div>
+                    </div>
+
+                        <div class="coach-card-txt">
+                            <p class="text-sm-b mb-24 text-large-sm" style="color: var(--primary-600);">健康意識人群</p>
+                            <h3 class="h4 h4-lg h4-md h4-sm mb-32">成為你平衡健康的後盾</h3>
+                        
+                            <div class="benefit-list d-flex  mb-40">
+                                <div class="icon-2 ">
+                                    <i class="fa-solid fa-arrow-trend-up" style="font-size: 30px ;color: var(--primary-600);">
+                                    </i>
+                                </div>
+                                <div class="benefit-card">
+                                    <h4 class="text-md-b  mb-8">深度健康洞察</h4>
+                                    <p class="text-sm "  style=" color: var(--netural-600)";>週期性健康報告，全面了解身體的每一個細微進步。</p>
+                                </div>
+
+                            </div>
+
+                            <div class="benefit-list d-flex  mb-40">
+                                <div class="icon-2 ">
+                                    <i class="bi bi-heart-pulse-fill" style="font-size: 30px ;color: var(--primary-600);">
+                                    </i>
+                                </div>
+                                <div class="benefit-card">
+                                    <h4 class="text-md-b mb-8">個人化生活儀式</h4>
+                                    <p class="text-sm"  style=" color: var(--netural-600)";> 智能調整飲水與習慣目標，做出更聰明、更自主的健康決策。</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+
 
         </div>
-
-
-            </div>
-
-            </div>
+    </div>           
+</div>
+            
 
         </section>
 
 
 
-<div class="container-3">
-    <footer class="footer-section d-flex" >
+<div class="container-pro">
+    <footer class="footer-section d-flex justify-center py-64" >
 
         <nav class="footer-logo">
         <img src="image/respiro-logo.png" alt="logo" width="150px;">
@@ -294,42 +378,50 @@
          </nav>
 
         <nav class="footer-product">
-                <h5>產品</h5>
+                <h5 class= "h6 h6-lg h6-md h6-sm">產品</h5>
             <ul>
-                <li><a href="">功能介紹</a></li>
-                <li><a href="">使用場景</a></li>
-                <li><a href="">價格方案</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">功能介紹</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">使用場景</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">價格方案</a></li>
                 
             </ul>
         </nav>
 
         
          <nav class="footer-product">
-                <h5>資源</h5>
+                <h5 class="h6 h6-lg h6-md h6-sm">資源</h5>
             <ul>
-                <li><a href="">部落格</a></li>
-                <li><a href="">使用指南</a></li>
-                <li><a href="">常見問題</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">部落格</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">使用指南</a></li>
+                <li><a href="" class="text-sm text-large-sm text-medium-sm">常見問題</a></li>
             </ul>
         </nav>
         
         <nav class="footer-about">
-            <h5>關於我們</h5>
+            <h5 class="h6 h6-lg h6-md h6-sm">關於我們</h5>
                 <ul>
-                    <li><a href="">關於Respiro</a></li>
-                    <li><a href="">隱私政策</a></li>
-                    <li><a href="">聯絡我們</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">關於Respiro</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">隱私政策</a></li>
+                    <li><a href=""class="text-sm text-large-sm text-medium-sm">聯絡我們</a></li>
                     
                 </ul>
         </nav>
 
-
-
+    </footer>
 </div>
-    </footer>        
+    
      
 
 
+<script>
+    let navbarToggle=document.querySelector('.navbar-toggle');
+    let navbarMenu=document.querySelector('.nav-menu');
 
+    navbarToggle.addEventListener("click",function(){
+        navbarToggle.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+    });
+
+</script>
 </body>
 </html>

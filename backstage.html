@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="backstage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="sidebar-overlay" id="sidebar-overlay" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.4); z-index: 1; display: none;"></div>
+    <div class="grid-layout">
+            <aside class="sidebar" id="sidebar" style="z-index: 99;">
+               <button id="sidebar-close-btn" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img src="image/respiro-logo.png" alt="respiro-logo" class="sidebar-full-logo" >
+                <img src="image/respiro-logo-square.png" alt="" class="sidebar-shrink-logo"  >
+                 
+                <a href=""><i class="fa-solid fa-house" style="font-size: 24px; margin-right: 32px;"></i>總 覽 </a>
+                <a href=""><i class="fa-solid fa-heart-circle-plus" style="font-size: 24px; margin-right: 32px;"></i>生理數據</a>
+                <a href=""><i class="fa-solid fa-moon" style="font-size: 24px; margin-right: 32px;"></i>睡眠分析 </a>
+                <a href=""><i class="fa-solid fa-arrow-trend-up" style="font-size: 24px; margin-right: 32px;"></i>趨勢洞察 </a>
+                <a href=""><i class="fa-solid fa-leaf" style="font-size: 24px; margin-right: 32px;"></i>壓力管理 </a>
+                <a href=""><i class="fa-solid fa-person-running" style="font-size: 24px; margin-right: 32px;"></i>運動方案 </a>
+                <a href=""><i class="fa-solid fa-heart-pulse" style="font-size: 24px; margin-right: 32px;"></i>健康提醒 </a>
+                <a href=""><i class="fa-solid fa-award" style="font-size: 24px; margin-right: 32px;"></i>成就徽章</a>
+    
+            </aside>
+            
+        
+
+            <header class="topbar d-flex align-center  justify-between">
+                <div class="menu-topbar d-flex justify-between ">
+                    <div class="hamburger-btn" id="hamburger-btn">
+                        <i class="fa-solid fa-bars" style="font-size: 24px;"></i>
+                    </div>
+                    <div class="text-topbar" >
+                        <h4 class="text-lg" >早安，Jenny !</h4>
+                        <p>今天也要照顧自己，讓身體和心靈保持平衡。</p>
+                    </div>
+                    <div class="search-topbar">
+                        <input type="text" name="search-bar" id="search-bar" placeholder="請輸入關鍵字" ><i class="fa-solid fa-magnifying-glass"></i> 
+                    </div>
+                </div>
+
+                <div class="reminder align-center d-flex justify-end">
+                    <i class="fa-regular fa-bell" style="font-size: 30px; color: var(--netural-400);" ></i>
+                    <a href="index.html" title="登出"><img src="image/big-photo.png" alt="個人大頭照" style="width: 60px; border-radius: 50%; "></a>
+                </div>
+
+                
+
+            </header>
+            
+            <main class="main-content">
+                <!-- <div class="container-pro"> -->
+                    <div class="dashboard-main-grid">
+                        <div class="analytics-section" >
+                            <h4 class="text-lg mb-4">今日狀態總覽</h4>
+                            <div class="status-Overview mb-32 " style="height: 250px;" >
+                                
+                                <!-- <div class="item-status-Overview d-flex"> -->
+                                        <div class="card-status-Overview">
+                                        <p class="text-sm">身體能量指數</p>
+                                            <p class="h3" style="color: var(--netural-800);">85 <span class="text-xsm" style="color: var(--netural-400);">/100</span></p>
+                                            <p class="tag-sm">良好</p>
+                                            <img src="image/overview-pic-01.png" alt="">
+                                        </div>
+                                        <div class="card-status-Overview">
+                                        <p class="text-sm">身體能量指數</p>
+                                            <p class="h3" style="color: var(--netural-800);">72 <span class="text-xsm" style="color: var(--netural-400);">ms</span></p>
+                                            <p class="tag-sm" >良好</p>
+                                            <img src="image/overview-pic-02.png" alt="">
+                                        </div>
+                                        <div class="card-status-Overview">
+                                        <p class="text-sm">睡眠品質</p>
+                                            <p class="h3" style="color: var(--netural-800);">87 <span class="text-xsm" style="color: var(--netural-400);">/100</span></p>
+                                            <p class="tag-sm">良好</p>
+                                            <img src="image/overview-pic-03.png" alt="">
+                                        </div>
+                                        <div class="card-status-Overview">
+                                            <p class="text-sm">壓力指數</p>
+                                            <p  class="h3" style="color: var(--netural-800);">36 <span class="text-xsm" style="color: var(--netural-400);">/100</span></p>
+                                            <p class="tag-sm"> 良好</p>
+                                            <img src="image/overview-pic-04.png" alt="">
+                                        </div>
+                                <!-- </div> -->
+
+                            </div>
+                            <h4 class="text-lg mb-4">趨勢洞察</h4>
+                            <div class="trend-insights mb-32" ">
+                                        <div class="card-trend-insights">
+                                            <p class="text-sm-b">HRV趨勢(ms)</p>
+                                            <p class="text-lg">72 <span class="text-xsm">ms</span></p>
+                                            <p>較上周平均 <span class="text-xsm-b" style="color: var(--primary-600);">上升 12%</span></p>
+                                            <!-- <p>近7天</p> -->
+                                            <div class="chart-caontainer">
+                                                <canvas id="hrv-chart" style="height: 150px"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="card-trend-insights">
+                                            <p class="text-sm-b">睡眠時長 (小時)</p>
+                                            <p class="text-lg">7.2<span class="text-xsm">小時</span></p>
+                                            <p>較上周平均 <span class="text-xsm-b" style="color: var(--primary-600);">增加0.5小時</span></p>
+                                            <!-- <p>近7天</p> -->
+                                            <div class="sleeptime-caontainer">
+                                                <canvas id="sleep-chart" style="height: 150px"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="card-trend-insights">
+                                            <p class="text-sm-b">壓力指數</p>
+                                            <p class="text-lg">36<span class="text-xsm">分</span></p>
+                                            <p>較上周平均<span class="text-xsm-b" style="color: var(--primary-600);">下降5</span> </p>
+                                            <div class="stress-caontainer">
+                                                <canvas id="stress-chart" style="height: 150px"></canvas>
+                                            </div>
+                                        </div>
+
+                            </div>
+                            
+                            <h4 class="text-lg mb-4">AI 洞察與建議</h4>
+                            <div class="ai-insights mb-32" style="background-color:var(--netural-0);">
+                                
+                                    <div class="card-ai-insights">
+                                            <p class="text-md-b">最佳專注時段</p>
+                                            <p class="text-sm mb-4">09:00-11:00</p>
+                                            <p class="text-xsm mb-4">根據你的生理數據，這段時間專注力最佳，適合處理重要任務。</p>
+                                            <img src="image/ai-insights-pic-01.png" alt="" style="width: 250px;">  
+                                    </div>
+                                    <div class="card-ai-insights">
+                                            <p class="text-md-b">最佳睡眠窗口</p>
+                                            <p class="text-sm mb-4">22:30-06:30</p>
+                                            <p class="text-xsm mb-4">這段時間入睡，能讓你獲得最佳睡眠品質與恢復效果。</p>
+                                            <img src="image/ai-insights-pic-02.png" alt="" style="width: 250px;">  
+                                    </div>
+                                    <div class="card-ai-insights">
+                                            <p class="text-md-b mb-4 ">今日建議</p>
+                                            <p class="text-xsm">進行10分鐘呼吸冥想練習<br>
+喝滿 2000ml水<br>
+22:30 準備入睡</p>
+                                            <img src="image/ai-insights-pic-03.png" alt="" style="width: 250px;">  
+                                    </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="action-section">
+                            
+                            <h4 class="text-lg mb-4">今日行動</h4>
+                            <div class="today-action mb-32">
+                                <div class="calendar-container mb-32">
+                                    <div class="calendar-header">
+                                        <button id="prev-week">&lt;</button>
+                                        <h2 id="current-date">2025/5/15</h2>
+                                        <button id="next-week">&gt;</button>
+                                    </div>
+                                    
+                                    <div class="calendar-days" id="calendar-days">
+                                        <div class="day-col"><span class="week-label">日</span><span class="day-number">12</span></div>
+                                        <div class="day-col"><span class="week-label">一</span><span class="day-number">13</span></div>
+                                        <div class="day-col"><span class="week-label">二</span><span class="day-number">14</span></div>
+                                        <div class="day-col active"><span class="week-label">三</span><span class="day-number">15</span></div>
+                                        <div class="day-col"><span class="week-label">四</span><span class="day-number">16</span></div>
+                                        <div class="day-col"><span class="week-label">五</span><span class="day-number">17</span></div>
+                                        <div class="day-col"><span class="week-label">六</span><span class="day-number">18</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-today-action">
+                                    <div class="text-today-action d-flex justify-between">
+                                        <p class="text-md-b">伸展提醒</p> 
+                                        <p class="text-sm" >早上 10:30</p>
+                                    </div>
+                                        <p class="text-sm">久坐一小時，來活動一下吧！</p>      
+                                </div>
+
+                                <div class="card-today-action">
+                                    <div class="text-today-action d-flex justify-between">
+                                        <p class="text-md-b">喝水提醒</p> 
+                                        <p class="text-sm" >下午 01:30</p>
+                                    </div>
+                                        <p class="text-sm">已經喝1200ml，記得補充水分！</p>      
+                                </div>
+                                <div class="card-today-action">
+                                    <div class="text-today-action d-flex justify-between">
+                                        <p class="text-md-b">睡眠準備</p> 
+                                        <p class="text-sm" >晚上 10:30 </p>
+                                    </div>
+                                        <p class="text-sm">建議23:00前上床睡覺 </p>      
+                                </div>
+                                
+
+                                
+                                
+                            </div>
+                            <h4 class="text-lg mb-4">快速行動</h4>
+                            <div class="quick-action  " style=" background-color:var(--netural-0);">
+                                <div class="card-quick-action">
+                                <img src="image/quick-action-pic-01.png" alt="" style="width: 100px;">
+                                <p class="text-sm-b">3 分鐘伸展</p>
+                                <p class="text-xsm mb-8">放鬆身心</p>
+                                </div>
+                                <div class="card-quick-action">
+                                <img src="image/quick-action-pic-04.png" alt="" style="width:  100px;">
+                                <p class="text-sm-b">冥想練習</p>
+                                <p class="text-xsm mb-8">專注舒壓</p>
+                                </div>
+                                <div class="card-quick-action">
+                                <img src="image/quick-action-pic-02.png" alt="" style="width: 100px;">
+                                <p class="text-sm-b">飲食記錄</p>
+                                <p class="text-xsm mb-8">記錄水量</p>
+                                </div>
+                                <div class="card-quick-action">
+                                <img src="image/quick-action-pic-03.png" alt="" style="width: 100px;">
+                                <p class="text-sm-b">睡眠日記</p>
+                                <p class="text-xsm mb-8">記錄睡眠</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        
+        const ctx = document.getElementById('hrv-chart').getContext('2d');
+        const dateLabels = ['5/10', '5/11', '5/12', '5/13', '5/14', '5/15', '5/16'];
+
+        new Chart(ctx, {
+            type: 'line', 
+            data: {
+                labels: dateLabels, 
+                datasets: [{
+                    label: 'HRV 心律變異性', 
+                    data: [65, 59, 80, 81, 56, 55, 40], 
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)', 
+                    tension: 0.4 
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+
+    }); // 記得最下面要加上這個閉合括號
+
+
+
+     document.addEventListener("DOMContentLoaded", function () {
+        
+        const ctx = document.getElementById('sleep-chart').getContext('2d');
+        const dateLabels = ['5/10', '5/11', '5/12', '5/13', '5/14', '5/15', '5/16'];
+
+        new Chart(ctx, {
+            type: 'bar', 
+            data: {
+                labels: dateLabels, 
+                datasets: [{
+                    label: '睡眠時長', 
+                    data: [6, 5.5, 7, 6.5, 6.5, 7, 8], 
+                    fill: false,
+                    backgroundColor: '#BBB3F9', 
+                    
+                    
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales:{
+                    y:{
+                        min:0,
+                        max:12,
+                        ticks:{stepSize:2},
+                        grid:{ display:true,
+                        color:'rgba(0,0,0,0.05)'
+                        }
+
+                    }
+                }
+            }
+        });
+
+    }); // 記得最下面要加上這個閉合括號
+
+
+
+     document.addEventListener("DOMContentLoaded", function () {
+        
+        const ctx = document.getElementById('stress-chart').getContext('2d');
+        const dateLabels = ['5/10', '5/11', '5/12', '5/13', '5/14', '5/15', '5/16'];
+
+        new Chart(ctx, {
+            type: 'line', 
+            data: {
+                labels: dateLabels, 
+                datasets: [{
+                    label: '壓力指數', 
+                    data: [55, 75, 60, 65, 55, 50, 65], 
+                    fill: false,
+                    borderColor: '#20A44B', 
+                    tension: 0.4 
+                    }]
+                },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                
+                scales: {
+                    y:{
+                        min:0,
+                        max:100,
+                        ticks:{stepSize:20},
+                        grid:{ display:true,
+                               color:'rgba(0,0,0,0.05)'
+                        }
+                    }
+                    ,x:{
+                        grid:{display: false}
+                    }
+                }
+                    }
+        });
+
+    }); // 記得最下面要加上這個閉合括號
+
+
+const hambergerBtn=document.getElementById('hamburger-btn');
+const sidebarOverlay=document.getElementById('sidebar-overlay');
+const sidebarClose=document.getElementById('sidebar-close-btn');
+const sideBar=document.getElementById('sidebar');
+
+// 點擊漢堡按鈕：打開側欄、顯示遮罩
+
+hambergerBtn.addEventListener("click",function(){
+    sideBar.classList.add('active');
+    sidebarOverlay.style.display="block";
+});
+
+// 點擊側欄內 X 按鈕：關閉側欄、隱藏遮罩
+
+sidebarClose.addEventListener("click",function(){
+    sideBar.classList.remove('active');
+    sidebarOverlay.style.display="none";
+});
+
+
+// 點擊黑色遮罩空白處：一樣可以收回側欄
+
+sidebarOverlay.addEventListener("click",function(){
+    sideBar.classList.remove('active');
+    sidebarOverlay.style.display="none";
+});
+
+    </script>
+</body>
+</html>

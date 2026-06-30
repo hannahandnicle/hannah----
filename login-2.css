@@ -90,7 +90,7 @@ label{
 
 .login-btn{
     
-     width: 445px;
+    width: 445px;
     padding-block:16px;
     background-color: var(--primary-600);
     color: var(--netural-0);
@@ -98,6 +98,7 @@ label{
     font-weight: 700;
     border-radius: 20px;
     border: none;
+    text-align: center;
 
 
 }
@@ -110,8 +111,16 @@ label{
 
 
 .login-change a{
-    width: 215px;
+   display: inline-block;
+    width: 215px;         /* 你原本設定的寬度 */
     font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--netural-800);
+    padding: 12px 0;       /* 移除左右 padding，靠 width 與 text-align 置中 */
+    text-align: center;    /* ✨ 關鍵：讓文字置中 */
+    border-bottom: 4px solid var(--netural-400);
+    box-sizing: border-box; /* 防止 padding 撐開寬度 */
     
 }
 
@@ -120,4 +129,50 @@ label{
     border-bottom: 4px solid var(--primary-700);
     color: var(--primary-700);
 
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+    
+    .login2-section {
+        background-image: url('image/respiro-logo.png');
+        background-position: top 24px left 24px; 
+        background-size: 180px auto;            
+        background-repeat: no-repeat;
+        padding-top: 120px;                     
+    }
+
+    
+    .login-logo {
+        display: none !important;
+    }
+
+    
+    .login-items {
+        flex-basis: 100%;
+        max-width: 500px;      
+        margin: 0 auto;        
+        border-radius: 30px;   
+        height: auto;          
+        padding-block: 40px;
+    }
+
+    
+    .login-text, 
+    .login-text input, 
+    .login-text p, 
+    label, 
+    .login-btn {
+        width: 100% !important;
+        max-width: 445px;      
+    }
+    
+    .login-change a {
+        width: 45%;           
+        max-width: 215px;
+    }
 }

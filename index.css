@@ -20,6 +20,7 @@
 }
 
 
+
 .login a{
    text-decoration: none;
    color: var(--netural-0);
@@ -261,6 +262,26 @@ margin-bottom: 32px;
     justify-content: center;
 }
 
+
+.tab-content {
+    display: none !important;
+}
+
+/* 只有帶有 .active 的卡片才顯示 (根據你原本的排版，可能是 flex 或 block) */
+.tab-content.active {
+    display: flex !important; 
+}
+
+
+.fit-bar a.active {
+    background-color: var(--primary-600);
+    color: var(--netural-0);
+    border-color: var(--primary-600);
+}
+
+
+
+
 @media (max-width:992px){
     
     .hero-content{
@@ -301,11 +322,18 @@ margin-bottom: 32px;
     flex: 1;
     object-fit: cover;
     aspect-ratio: 1 / 1;
-    
 }
 
 
+    .device-combine-item {
+        flex-direction: column;
+    }
  
+
+    .device-combine-item {
+    gap: 64px;
+    align-items: center;
+}
     
 }
 
@@ -333,19 +361,17 @@ margin-bottom: 32px;
     scroll-snap-align: center;
   }
 
-  /* .serv-card-list{
-    flex-wrap: nowrap; 
-    overflow-x: auto;
-     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    /* justify-content: center; */
-        /* }   */
+.solution-item-scroll{
+  width:100%;
+  height:auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  
+}
 
-/* .serv-card-list .serv-card{
-    flex: 0 0 85%;             
-    max-width: 85%;             
-    scroll-snap-align: center; }  
-  */
+
 .serv-card-list.row {
       display: flex !important;
       flex-wrap: nowrap !important;  /* 強制覆蓋 Bootstrap 的 wrap，不讓卡片往下掉 */
@@ -357,9 +383,10 @@ margin-bottom: 32px;
 
   .serv-card-list .serv-card,
   .serv-card-list .serv-card-img {
-      flex: 0 0 75% !important;     /* 覆蓋 col-4 的寬度，讓卡片在手機版佔滿 75% */
+      flex: 0 0 100%;  ;    
+      scroll-snap-align: start;
       max-width: 75% !important;    /* 覆蓋 Bootstrap 的 max-width */
-      scroll-snap-align: center;    /* 讓卡片滾動時自動吸附置中 */
+      
       margin-bottom: 0px !important; /* 取消手機版的下邊距 */
   }
 
@@ -367,6 +394,29 @@ margin-bottom: 32px;
   .serv-card-list.row::-webkit-scrollbar {
       display: none;
   }
+
+  .btn_container{
+  display:flex;
+  gap:10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all .3s ease ;
+  
+}
+
+.btn-dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.btn-dot:hover{
+  background-color: #666;
+  transform: scale(1.2);
+}
+
+
 
 }
 
