@@ -369,7 +369,7 @@
         <img src="image/respiro-logo.png" alt="logo" width="150px;">
         <p >結合穿戴裝置與AI 科技，幫助你在忙碌的生活中<br>找到平衡、提升專注與身心健康。</p>
         <ul class="d-flex">
-            <li><a href="#"><i class="fa-brands fa-instagram" " style="font-size: 16px;"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram" style="font-size: 16px;"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-facebook " style="font-size: 16px;"></i></a></li>
             <li><a href="#"><i class="fa-regular fa-envelope-open " style="font-size: 16px;"></i></a></li>
             
@@ -421,6 +421,32 @@
         navbarToggle.classList.toggle('active');
         navbarMenu.classList.toggle('active');
     });
+
+
+
+   document.addEventListener("DOMContentLoaded", function () {
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", function (e) {
+        e.preventDefault(); // 防止 <a> 標籤跳頁
+
+        // 1. 移除所有按鈕的 active 樣式
+        tabs.forEach(t => t.classList.remove("active"));
+        // 2. 移除所有卡片的 active 顯示
+        contents.forEach(c => c.classList.remove("active"));
+
+        // 3. 幫當前點擊的按鈕加上 active
+        this.classList.add("active");
+
+        // 4. 根據按鈕的 data-tab 找到對應的卡片 ID 並加上 active
+        const targetId = this.getAttribute("data-tab");
+        document.getElementById(targetId).classList.add("active");
+    });
+});
+
+});
 
 </script>
 </body>
