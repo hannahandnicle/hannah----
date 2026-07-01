@@ -227,6 +227,9 @@ background-size: auto;
 
 
 
+#drinkWater{
+    display: none;
+}
 
 
 @media (max-width:992px){

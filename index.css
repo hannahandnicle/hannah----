@@ -381,12 +381,15 @@ margin-bottom: 32px;
       padding-bottom: 20px;          /* 留空間給滾動條 */
   }
 
+.card-list.row::-webkit-scrollbar {
+      display: none;
+  }
+
   .serv-card-list .serv-card,
   .serv-card-list .serv-card-img {
       flex: 0 0 100%;  ;    
       scroll-snap-align: start;
       max-width: 75% !important;    /* 覆蓋 Bootstrap 的 max-width */
-      
       margin-bottom: 0px !important; /* 取消手機版的下邊距 */
   }
 
